@@ -15,6 +15,10 @@ After runnung the script the directory structure of the entire hard disk is cont
 Remaining Issues
 ================
 
-All the files are not being created.
+All the files are not being created.(problem in line 10)
+
+Use a function instead of subprocess.
 
 Make use of command line arguements so as to make the script more generalized.(independent of the OS)
+
+Develope a GUI using PyQT
