@@ -1,21 +1,32 @@
-import os,subprocess
+import os, subprocess, shutil
 
-f = open('filestructure.txt', 'w+')
-for root, dirs, files in os.walk("/Users"):
-	for name in files:
-		a = os.path.join(root, name)
-		trial = list(a)
-		trial[1] = "+"
-		a = "/Users/admin/Desktop/mirror" + "".join(trial)
-        subprocess.call(['touch',a])
-		#issue here(only one file is being made).
-        f.write(a + "\n")
-	for name in dirs:
-		a = os.path.join(root, name)
-		trial = list(a)
-		trial[1] = "+"
-		a = "/Users/admin/Desktop/mirror" + "".join(trial)
-		f.write(a + "\n")
-		if not os.path.exists(a):
-			os.makedirs(a)
-f.close()
+src_root = "/Users/chaitanyagupta/Dropbox"
+dest_root = "/Users/chaitanyagupta/Desktop/Mirror/"
+
+if os.path.exists(dest_root):
+	shutil.rmtree(dest_root)
+
+ignore_folders = ['.git', 'lib', 'env', 'bin', '.Trash']
+ignore_files = ['.DS_Store', '.localized']
+
+for cur_fol, dirs, files in os.walk(src_root):
+
+	for ignore in ignore_folders:
+		if ignore in dirs:
+			dirs.remove(ignore)
+
+	for ignore in ignore_files:
+		if ignore in files:
+			files.remove(ignore)
+
+	dest_dir = cur_fol.replace(src_root, dest_root)
+
+	for dirname in dirs:
+		destination = os.path.join(dest_dir, dirname)
+		if not os.path.exists(destination):
+			os.makedirs(destination)
+
+	for filename in files:
+		destination = os.path.join(dest_dir, filename)
+
+		open(destination, "w").close()
