@@ -1,7 +1,11 @@
-import os, subprocess, shutil
+import os, subprocess, shutil, sys
 
-src_root = "/Users/chaitanyagupta/Dropbox"
-dest_root = "/Users/chaitanyagupta/Desktop/Mirror/"
+if len(sys.argv) != 3:
+    print("Usage: mirror [source_directory_root] [destination_directory_root]")
+    sys.exit(1)
+
+src_root = str(sys.argv[1])
+dest_root =str(sys.argv[2])
 
 if os.path.exists(dest_root):
 	shutil.rmtree(dest_root)
