@@ -5,7 +5,7 @@ if len(sys.argv) != 3:
     sys.exit(1)
 
 src_root = str(sys.argv[1])
-dest_root =str(sys.argv[2])
+dest_root = str(sys.argv[2])
 
 if os.path.exists(dest_root):
 	shutil.rmtree(dest_root)
