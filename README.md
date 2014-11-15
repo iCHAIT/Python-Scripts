@@ -25,4 +25,4 @@ It is recommended that you do not create this backup folder anywhere else.
 
 Your /Users will look something like this.
 
-![ScreenShot](photo.png)
+![ScreenShot](shot.png)
