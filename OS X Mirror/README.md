@@ -21,4 +21,8 @@ It is recommended that the Backup folder should not be created anywhere else
 
 ## Screenshot
 
+Your /Users should look like this...
+
 ![ScreenShot](/OS X Mirror/shot.png)
+
+A folder named Backup will be created.
