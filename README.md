@@ -20,3 +20,9 @@ sudo need to be written before the script is run because you need SuperUser righ
 
 It is recommended that you do not create this backup folder anywhere else.
 
+
+## Screenshot
+
+Your /Users will look something like this.
+
+![ScreenShot](photo.png)
