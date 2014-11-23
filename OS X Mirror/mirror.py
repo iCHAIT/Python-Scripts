@@ -1,7 +1,7 @@
 import os, subprocess, shutil
 
 
-src_root = "/Users/Username/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta
+src_root = "/Users/username/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta/
 dest_root = "/Users/Backup/"
 
 
@@ -9,7 +9,7 @@ if os.path.exists(dest_root):
 	shutil.rmtree(dest_root)
 
 
-ignore_folders = ['.git', 'lib', 'env', 'bin']
+ignore_folders = ['.git', 'lib', 'env', 'bin','Library']
 
 
 for cur_fol, dirs, files in os.walk(src_root):

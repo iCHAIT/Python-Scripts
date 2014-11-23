@@ -9,15 +9,14 @@ The script creates a 0 byte directory structure for the entire hard disk.
 
 $ sudo python mirror.py
 
+
 ## Note
 
-sudo should be used as superuser rights are required to make a folder at location /Users.
+sudo should be used,as superuser rights are required to make a folder at location /Users.
 
-Enter the corresponding path for the root user.
+After running the script the directory structure of the entire hard disk is contained in the folder named Backup that is created at location /Users.
 
-After runnung the script the directory structure of the entire hard disk is contained in the folder named Backup located at /Users.
-
-It is recommended that the Backup folder should not be created anywhere else
+It is recommended that the Backup folder should not be created anywhere else.
 
 ## Screenshot
 
