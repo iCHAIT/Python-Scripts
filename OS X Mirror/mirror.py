@@ -30,8 +30,8 @@ for cur_fol, dirs, files in os.walk(src_root):
 
 
 	for filename in files:
-		b = os.path.join(cur_fol, filename)
+		temp = os.path.join(cur_fol, filename)
 		destination = os.path.join(dest_dir, filename)
 		open(destination, "w").close()
-		stinfo = os.stat(b)
+		stinfo = os.stat(temp)
 		os.utime(destination,(stinfo.st_atime,stinfo.st_mtime))
