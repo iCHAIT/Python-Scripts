@@ -25,3 +25,7 @@ Your /Users should look like this...
 ![ScreenShot](/OS X Mirror/shot.png)
 
 A folder named Backup will be created.
+
+## TODO
+
+Implement the script using scandir() instead of walk.
