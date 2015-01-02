@@ -1,7 +1,7 @@
 import os, subprocess, shutil
 
 
-src_root = "/Users/username/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta/
+src_root = "/Users/Username/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta/
 dest_root = "/Users/Backup/"
 
 
