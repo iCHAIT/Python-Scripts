@@ -1,9 +1,9 @@
 import sys
 from datetime import date
 
-yr = int(raw_input('Enter the year you were born:'))
-mon = int(raw_input('Enter the month you were born:'))
-dat = int(raw_input('Enter the date you were born:'))
+yr = int(raw_input('Enter the year you were born(yyyy):'))
+mon = int(raw_input('Enter the month you were born(mm):'))
+dat = int(raw_input('Enter the date you were born(dd):'))
 
 birthday = date(yr,mon,dat)
 
