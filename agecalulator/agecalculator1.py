@@ -11,6 +11,6 @@ try:
 	print "You've lived %d days" %(age.days)
 
 except ValueError, err:
-        print 'ERROR:', err	
+        print 'ERROR:', err		
 
 
