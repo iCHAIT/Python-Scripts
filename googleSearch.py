@@ -4,7 +4,7 @@ import json
 
 url = "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&"
 
-query = raw_input("What do you want to search for ? >> ")
+query = raw_input("What do you want to search for ? ")
 
 query = urllib.urlencode( {'q' : query } )
 
