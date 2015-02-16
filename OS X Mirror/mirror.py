@@ -1,4 +1,9 @@
 import os, subprocess, shutil
+import sys, getpass
+
+user = getpass.getuser()
+
+print user
 
 
 src_root = "/Users/Username/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta/
