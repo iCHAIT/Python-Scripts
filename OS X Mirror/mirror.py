@@ -1,12 +1,10 @@
 import os, subprocess, shutil
-import sys, getpass
-
-user = getpass.getuser()
-
-print user
 
 
-src_root = "/Users/Username/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta/
+user = os.getenv("SUDO_USER")
+
+
+src_root = "/Users/"+user+"/"    # Enter the corresponding Username, Eg... /Users/chaitanyagupta/
 dest_root = "/Users/Backup/"
 
 
