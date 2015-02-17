@@ -3,9 +3,7 @@ import sys
 import getpass
 import shutil
 
-user = getpass.getuser()
-
-print user
+user = os.getenv("USER")
 
 dir="/Users/"+user+"/Downloads/"
 
