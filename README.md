@@ -13,3 +13,9 @@ Consequently the the output generated will be removed from the TODO list assumin
 ENJOY...;)
 
 * **googleSearch.py** - This is another fun script, it provides a command line utility to perform google search. It gives you the top links of whatever you want to search on google.
+
+* **sort_dwnlds,py** - This is a useful script that organizes your Downloads directory that is often for most of us is unorganized and is a nuisance.
+
+The script was taken from - https://github.com/akifkhan/Sorting-Hat
+
+With some tweaks of my own to suite my requirements and keeping OS X operating system in mind.
