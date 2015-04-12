@@ -8,22 +8,22 @@ user = os.getenv("USER")
 dir="/Users/"+user+"/Downloads/"
 
 def sort(f_type):
-  try:  
-      dirname=f_type.upper() 
+  try:
+      dirname=f_type.upper()
       os.chdir(dir)
       for files in os.listdir("."):
-  
+
 	  if files.endswith(f_type):
-	
+
 	      if os.path.isdir(dir+dirname):
 		  shutil.move(dir+files,dir+dirname)
-        
+
 	      else:
 		  os.mkdir(dir+dirname)
 		  shutil.move(dir+files,dir+dirname)
-		
-      return	  
-  
+
+      return
+
   except IOError:
       print "Error in reading file"
 
@@ -53,3 +53,6 @@ sort("ics")
 sort("whl")
 sort("rar")
 sort("epub")
+sort("png")
+sort("odp")
+sort("ppt")
