@@ -14,7 +14,7 @@ ENJOY...;)
 
 * **googleSearch.py** - This is another fun script, it provides a command line utility to perform google search. It gives you the top links(search results) of whatever you want to search on google.
 
-* **sort_dwnlds,py** - This is a useful script that organizes your Downloads directory that is often for most of us is unorganized and is a nuisance.
+* **sort_dwnlds.py** - A useful script that organizes your Downloads directory that is often for most of us is unorganized and is a nuisance.
 
 The script was taken from - https://github.com/akifkhan/Sorting-Hat
 
@@ -25,7 +25,16 @@ With some tweaks of my own to suite my requirements and keeping OS X operating s
 * **location.py** - This is a small script that return the location parameters of any location you want.
 
 
+ISSUES
+======
+
+* Handle duplicate cases in sort_dwnlds.
+
+
 TODO
 ====
 
-* Handle duplicate cases in sort_dwnlds.
+**sort_dwnlds.py**
+
+* Re Write the code ( Find a better way to handle different extensions).
+* Make a GUI using pyQT ( Enabling the user to run the script on any folder he wants to)
