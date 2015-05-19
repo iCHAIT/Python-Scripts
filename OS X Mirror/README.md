@@ -5,12 +5,9 @@ A python script to create the Mirror of an entire hard disk for the OS X operati
 The script creates a 0 byte directory structure for the entire hard disk.
 
 
-## Build instructions
+## Run the script
 
 $ sudo python mirror.py
-
-
-## Note
 
 sudo should be used,as superuser rights are required to make a folder at location /Users.
 
@@ -29,3 +26,7 @@ A folder named Backup will be created.
 ## TODO
 
 Implement the script using scandir() instead of walk.
+
+## Credits
+
+Thanks for the idea [Shadab Zafar](https://github.com/dufferzafar)
