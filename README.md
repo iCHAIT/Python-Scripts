@@ -18,7 +18,7 @@ ENJOY...;)
 
 The script was taken from - https://github.com/akifkhan/Sorting-Hat
 
-With some tweaks of my own to suite my requirements and keeping OS X operating system in mind.
+With some tweaks of my own to suite the OS X operating system.
 
 * **pdf_dwnldr.py** - This script scrapes all the pdf links that are there on any web page any downloads the pdf's.
 
@@ -29,6 +29,7 @@ ISSUES
 ======
 
 * Handle duplicate cases in sort_dwnlds.
+* location.py does not works always.(use different module)
 
 
 TODO
