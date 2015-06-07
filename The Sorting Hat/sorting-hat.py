@@ -2,8 +2,8 @@ import os
 import shutil
 
 user = os.getenv("USER")
-# dir = "/Users/"+user+"/Downloads/"
-direc = "/Users/"+user+"/Desktop/hat/"
+direc = "/Users/"+user+"/Downloads/"
+# direc = "/Users/"+user+"/Desktop/hat/"
 
 
 def findExtension():
