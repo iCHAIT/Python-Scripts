@@ -2,7 +2,6 @@ import os
 import shutil
 
 user = os.getenv("USER")
-# dir = "/Users/"+user+"/Desktop/hat/"
 dir = "/Users/"+user+"/Downloads/"
 
 try:
