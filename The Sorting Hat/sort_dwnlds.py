@@ -16,8 +16,7 @@ try:
                     if os.path.isfile(dir+dirname+"/"+files):
                         print "Could not move "+dir+files+" it already exist in "+dir+dirname+"/"
                         continue
-                    else:
-                        shutil.move(dir+files, dir+dirname)
+                    shutil.move(dir+files, dir+dirname)
 
                 else:
                     os.mkdir(dir+dirname)
