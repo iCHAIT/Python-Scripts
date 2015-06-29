@@ -33,12 +33,12 @@ try:
     for files in os.listdir(direc):
         if not files.startswith('.'):    # Ignoring hidden files
             if os.path.isfile(files):
-                dirname = findExtension(files);
+                dirname = findExtension(files)
                 if os.path.isdir(os.path.join(direc, dirname)):
-                    FileExist(direc, dirname, files);
+                    FileExist(direc, dirname, files)
 
                 else:
-                    makeTheDir(files);
+                    makeTheDir(files)
     print "All Done!"
 
 except IOError:
