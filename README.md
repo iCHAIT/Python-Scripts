@@ -12,6 +12,7 @@ Here are some scripts that I have written in python. Most of these scripts were 
 * [googleSearch.py](#google)
 * [location.py](#location)
 * [pdf_dwnldr.py](#pdf)
+* [pyCountry.py](#country)
 * [todo_manager.py](#todo)
 
 
@@ -43,6 +44,11 @@ This is a small script that return the location parameters of any location you w
 ## <a name="pdf"></a>pdf_dwnldr.py
 
 This script scrapes all the pdf links that are there on any web page any downloads the pdf's.
+
+
+## <a name="country"></a>pyCountry
+
+Made this script with the objective of learning and gaining knowlegde of the pycountry python module (had to use this module in some other project).
 
 
 ## <a name="todo"></a>todo_manager.py
