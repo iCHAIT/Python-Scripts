@@ -59,15 +59,14 @@ Consequently the the output generated will be removed from the TODO list assumin
 ENJOY...;)
 
 
-
-
 ISSUES
 ======
 
 * location.py does not works always.(use different module)
 
+
 TODO
 ====
 
-* script for replying birthday wishes on FB
-* script to wish birthday on friend's wall on facebook.
+* Script to wish birthday on friend's wall on facebook.
+* Script for scraping GitHub news feed and mail the data to the user. 
