@@ -3,13 +3,11 @@ import json
 from random import randint
 import urllib
 
-# http://www.timestampgenerator.com/
-# Use this link to generate the timeStamp.
+# Timestamp for 11 July in UTC
 timeStamp = 1436553000
 
-# Initialize the Graph API with a valid access token
 # Generate access token here: https://developers.facebook.com/tools/explorer/
-accessToken = 'CAACEdEose0cBAMbbl879eFiRRBZC6fEJ0Cllnkp7nHz1PNtPnmb0UYKWbKFMVgjobbMvTOCU80SKyx7l9bys8kAFb3MZCSsBCkn9GDWPNaaUfZCTmYRDedt2QcnwYRfOrVc3EZANBo6OgTdVK1TotQrnxjM3olDqRtSZAuCRBpBm6ZCZAg0KhhsK9IMcYJDjVR70R1AacZAChcjcy6sQxGx3aZBnHPcFSjQ0ZD'
+accessToken = ' <insert token here> KEEP the quotes'
 
 query = " SELECT post_id, actor_id, created_time, message FROM stream WHERE \
                 filter_key = 'others' AND source_id = me() AND \
@@ -22,20 +20,20 @@ wallposts = result['data']
 
 
 print str(len(wallposts)) + " to handle"
-baseUrl = "https://graph.facebook.com/"
+base = "https://graph.facebook.com/"
 count = 1
 for wallpost in wallposts:
-    forCheck = wallpost['message'].split()
-    if set(['happy', 'happiee', 'hbd', 'HBD', 'bday', 'birthday', 'returns']).intersection(set(forCheck)) > 0:
-        url = baseUrl + '%s/comments' % wallpost['post_id']
-        likesUrl = baseUrl + str(wallpost['post_id']) + "/likes/?access_token=" + accessToken + "&method=POST"
-        commented = baseUrl + str(wallpost['post_id']) + "/comments/?access_token=" + accessToken + "&method=GET"
+    checkWish = wallpost['message'].split()
+    if set(['happy', 'happiee', 'hbd', 'HBD', 'bday', 'birthday', 'returns']).intersection(set(checkWish)) > 0:
+        url = base + '%s/comments' % wallpost['post_id']
+        likes = base + str(wallpost['post_id']) + "/likes/?access_token=" + accessToken + "&method=POST"
+        commented = base + str(wallpost['post_id']) + "/comments/?access_token=" + accessToken + "&method=GET"
         post_comments = urllib.urlopen(commented)
         htmlSource = post_comments.read()
         post_comments.close()
-        requests.post(likesUrl)
+        requests.post(likes)
         messages = ['Thank you :)', 'Thanks :)']
-        comment = {'access_token': accessToken, 'message': messages[randint(0,1)]}
+        comment = {'access_token': accessToken, 'message': messages[randint(0, 1)]}
         if len(htmlSource) == 11:
             requests.post(url, data=comment)
         print "Wall post %d done" % count
