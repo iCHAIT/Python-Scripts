@@ -9,6 +9,7 @@ Automate replies to all birthday wishes on your facebook wall.
 * Get a valid Access Token from [Facebook Graph API explorer](https://developers.facebook.com/tools/explorer/) and grant the following permissions:
   * `read_insights`
   * `publish_actions`
+  * `user_posts`
 
 * Change the timestamp to your birthday
 
