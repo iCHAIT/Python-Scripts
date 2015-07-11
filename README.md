@@ -6,6 +6,7 @@ Here are some scripts that I have written in python. Most of these scripts were 
 
 ### List of Scripts
 
+* [FBWishReplier](#FBWish)
 * [OS X Mirror](#mirror)
 * [The Sorting Hat](#hat)
 * [agecalulator](#calculator)
@@ -14,6 +15,11 @@ Here are some scripts that I have written in python. Most of these scripts were 
 * [pdf_dwnldr.py](#pdf)
 * [pyCountry.py](#country)
 * [todo_manager.py](#todo)
+
+
+## <a name="FBWish"></a>FBWishReplier
+
+https://github.com/iCHAIT/Python-Scripts/tree/master/Facebook
 
 
 ## <a name="mirror"></a>OS X Mirror
