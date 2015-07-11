@@ -29,12 +29,12 @@ for wallpost in wallposts:
         likes = base + str(wallpost['post_id']) + "/likes/?access_token=" + accessToken + "&method=POST"
         commented = base + str(wallpost['post_id']) + "/comments/?access_token=" + accessToken + "&method=GET"
         post_comments = urllib.urlopen(commented)
-        htmlSource = post_comments.read()
+        jsonSource = post_comments.read()
         post_comments.close()
         requests.post(likes)
         messages = ['Thank you :)', 'Thanks :)']
         comment = {'access_token': accessToken, 'message': messages[randint(0, 1)]}
-        if len(htmlSource) == 11:
+        if len(jsonSource) == 11:   # Find a neater way to handle this.
             requests.post(url, data=comment)
         print "Wall post %d done" % count
         count += 1

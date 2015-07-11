@@ -1,7 +1,7 @@
 FBWishReplier
 ==============
 
-Automate replies to all birthday wishes on your facebook wallfacebook.
+Automate replies to all birthday wishes on your facebook wall.
 
 
 ## Usage
