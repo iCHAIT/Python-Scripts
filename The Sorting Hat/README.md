@@ -26,4 +26,4 @@ TODO
 
 * Make a **GUI** using **pyQT**.
 
-* Test the script on other linux OS.
+* Test the script on other Opertaing Sytems.
