@@ -8,7 +8,6 @@ Here are some scripts that I have written in python. Most of these scripts were 
 
 * [FBWishReplier](#FBWish)
 * [OS X Mirror](#mirror)
-* [The Sorting Hat](#hat)
 * [agecalulator](#calculator)
 * [googleSearch.py](#google)
 * [location.py](#location)
@@ -25,11 +24,6 @@ https://github.com/iCHAIT/Python-Scripts/tree/master/Facebook
 ## <a name="mirror"></a>OS X Mirror
 
 A python script to create the Mirror of the hard disk for the OS X operating system. The script creates a 0 byte directory structure for the entire hard disk.
-
-
-## <a name="hat"></a>The Sorting Hat
-
-A python script to sort any directory on your linux system on the basis of its type i.e all your music moves to a sub directory MP3, all your pdf files move to a folder PDF and so on.
 
 
 ## <a name="calculator"></a>agecalulator
