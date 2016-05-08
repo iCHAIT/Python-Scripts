@@ -68,5 +68,6 @@ ISSUES
 TODO
 ====
 
+* Add Makefile
 * Script to wish birthday on friend's wall on facebook.
 * Script for scraping GitHub news feed and mail the data to the user. 
