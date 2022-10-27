@@ -7,8 +7,8 @@ try:
     now = date.today()
     age = now - birthday
 
-    print "You are %d years old " % (age.days / 365)
-    print "You've lived %d days" % (age.days)
+    print(f"You are {age.days / 365} years old")
+    print(f"You've lived {age.days} days")
 
-except ValueError, err:
-    print 'ERROR:', err
+except ValueError as  err:
+    print(f"ERROR: {err}")
