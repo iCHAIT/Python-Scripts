@@ -1,10 +1,15 @@
-import pycountry
+from pycountry import countries
 
-countr = {}
+print(countries.get(alpha_2='DE'))
 
-t = list(pycountry.countries)
 
-for country in t:
-    countr[country.alpha2] = country.name
+#import pycountry
 
-print countr
+#countr = {}
+
+#t = list(pycountry.countries)
+
+#for country in t:
+    #countr[country.alpha2] = country.name
+
+#print countr
